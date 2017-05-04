@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "webpack configuration",
   "main": "webpack.config.js",
-  "homepage": "http://paulawasylow.github.io/landing-page-beside-the-park",
+  "homepage": "https://paulawasylow.github.io/landing-page-beside-the-park/",
   "scripts": {
     "start": "webpack-dev-server -d --hot --config webpack.config.js --watch",
     "deploy" : "npm run build&&gh-pages -d build"
