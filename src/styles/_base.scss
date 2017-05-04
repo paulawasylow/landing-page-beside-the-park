@@ -1,0 +1,21 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  background-color: $white;
+  color: $black;
+  font-family: $font-Open-Sans;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+html {
+    @include font-size-map($html-font-size);
+}
+
+p {
+    @include font-size-map($paragraph-font-size);
+}

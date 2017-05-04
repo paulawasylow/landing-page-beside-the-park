@@ -1,0 +1,73 @@
+.o-hero-image {
+  max-height: 59.5em; /* 952/16 */
+  height: auto;
+  width: 100%;
+  top: 0;
+  border-bottom: 0.125em solid $light-green; /* 2/16 */
+  opacity: 0.95;
+  @include media-query-max(751px) {
+  }
+}
+
+.c-header__title {
+  color: rgba($white,0.8);
+  flex-basis: 50%;
+  animation: fadeInLeft-opacity 0.5s 0.7s backwards;
+  @include media-query-max(350px) {
+    transform: translateY(2.5em);
+  }
+
+  & h2 {
+    font-size: 2.188em; /* 35/16 */
+    margin-bottom: 0.5em;
+  }
+
+  & p {
+    font-size: 0.875em; /* 14/16 */
+    line-height: 2em;
+    @include media-query-max(751px) {
+      font-size: 1.125em; /* 18/16 */
+    }
+  }
+}
+
+.o-image__iphone {
+  flex-basis: 50%;
+
+  & img {
+    transform: translateY(25%) scale(0.8);
+    width: 100%;
+    height: auto;
+
+    @include media-query-max(668px) {
+      transform: translateY(25%) scale(0.8);
+    }
+    @include media-query-min(669px) {
+      transform: translateY(25%) scale(0.7);
+    }
+    @include media-query-min(752px) {
+      transform: translateY(25%) scale(0.8);
+    }
+    @include media-query-min(1100px) {
+      transform: translateY(20%) scale(0.8);
+    }
+    @include media-query-min(1200px) {
+      transform: translateY(18%) scale(0.8);
+    }
+    @include media-query-min(1350px) {
+      transform: translateY(23%) scale(0.9);
+    }
+    @include media-query-min(1450px) {
+      transform: translateY(23%) scale(1);
+    }
+    @include media-query-min(1500px) {
+      transform: translateY(30%) scale(0.9);
+    }
+    @include media-query-min(1600px) {
+      transform: translateY(32%) scale(1);
+    }
+    @include media-query-min(1800px) {
+      transform: translateY(37%) scale(1.2);
+    }
+  }
+}

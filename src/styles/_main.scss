@@ -1,0 +1,153 @@
+.c-main__container {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5em 0;
+
+  @include media-query-max(1200px) {
+    padding: 5em 2em;
+  }
+
+  @include media-query-max(350px) {
+    padding: 2.5em 2em;
+  }
+}
+
+.c-main__cols {
+ flex-basis: 100%;
+ width: 100%;
+ display: flex;
+ flex-flow: row wrap;
+ margin-top: 2.5em;
+ color: $white;
+
+  & > div {
+    padding: 2.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    & h2 {
+      font-size: 2.188em; /* 35/16 */
+      font-weight: 300;
+      margin-bottom: 0.5em;
+    }
+
+    & p, span {
+      font-size: 0.875em; /* 14/16 */
+      line-height: 2em;
+      @include media-query-max(751px) {
+        font-size: 1.125em; /* 18/16 */
+      }
+
+    & a {
+        text-decoration: none;
+        color: $white;
+      }
+    }
+
+    & span {
+      font-weight: 700;
+      margin-top: 2em;
+    }
+  }
+
+  & div:nth-child(1) {
+    background-color: $dark-gray;
+    flex-basis: 66.5%;
+    @include media-query-max(751px) {
+      flex-basis: 100%;
+    }
+  }
+
+  & div:nth-child(2) {
+    background-color: $dark-green;
+    flex-basis: 33.5%;
+    @include media-query-max(751px) {
+      flex-basis: 100%;
+    }
+  }
+
+  & div:nth-child(3) {
+    background-color: $dark-blue;
+    flex-basis: 66.5%;
+    @include media-query-max(751px) {
+      flex-basis: 100%;
+    }
+  }
+
+  & div:nth-child(4) {
+    background-color: $light-green;
+    flex-basis: 33.5%;
+    @include media-query-max(751px) {
+      flex-basis: 100%;
+    }
+  }
+}
+
+.c-main__section {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  @include media-query-max(751px) {
+    flex-direction: column;
+  }
+}
+
+.c-main__section .active{
+  transform: translateY(-100%);
+}
+
+.c-main__description {
+  flex-basis: 50%;
+
+  &--right {
+    align-self: center;
+  }
+
+  & > p {
+    flex: 1;
+    flex-basis: 50%;
+    color: $light-gray;
+  }
+
+  & h2 {
+    font-size: 2.188em; /* 35/16 */
+    font-weight: 300;
+    margin-bottom: 0.5em;
+  }
+
+  & p {
+    font-size: 0.875em; /* 14/16 */
+    line-height: 2em;
+    @include media-query-max(751px) {
+      font-size: 1.125em; /* 18/16 */
+    }
+  }
+
+  & > * + * {
+    margin: 1em 0;
+  }
+}
+
+.u-wrapper-center {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  @include media-query-max(1200px) {
+    padding: 0 2em;
+  }
+}
+
+.wrapper {
+  top: 0;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
+}

@@ -1,0 +1,32 @@
+{
+  "name": "webpackconfig",
+  "version": "1.0.0",
+  "description": "webpack configuration",
+  "main": "webpack.config.js",
+  "homepage": "http://paulawasylow.github.io/landing-page-beside-the-park",
+  "scripts": {
+    "start": "webpack-dev-server -d --hot --config webpack.config.js --watch",
+    "deploy" : "npm run build&&gh-pages -d build"
+  },
+  "keywords": [
+    "webpack"
+  ],
+  "author": "Paula Andżelika Wasylów",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-preset-es2015": "^6.24.1",
+    "css-loader": "^0.28.1",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "file-loader": "^0.11.1",
+    "gh-pages": "^0.12.0",
+    "image-webpack-loader": "^3.3.0",
+    "node-sass": "^4.5.2",
+    "sass-loader": "^6.0.3",
+    "style-loader": "^0.17.0",
+    "url-loader": "^0.5.8",
+    "webpack": "^2.4.1",
+    "webpack-dev-server": "^2.4.5"
+  }
+}
