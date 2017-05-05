@@ -5,8 +5,6 @@
   top: 0;
   border-bottom: 0.125em solid $light-green; /* 2/16 */
   opacity: 0.95;
-  @include media-query-max(751px) {
-  }
 }
 
 .c-header__title {
